@@ -2,14 +2,13 @@
 
 Interactive Business Intelligence dashboard built with **Microsoft Power BI** to analyze sales performance, profitability, customer behavior, and business growth through dynamic visualizations and executive KPIs.
 
----------------
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-0F9D58?style=for-the-badge)
 ![Power Query](https://img.shields.io/badge/Power_Query-217346?style=for-the-badge)
 ![Microsoft Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
------------
+---
 
 ## Project Overview
 
@@ -17,9 +16,46 @@ This project demonstrates how Business Intelligence transforms raw transactional
 
 The dashboard enables executives, business managers, and analysts to monitor organizational performance through interactive visualizations, key performance indicators (KPIs), and trend analysis.
 
-The solution focuses on sales performance, profitability, customer behavior, product performance, and seasonal trends.
+The solution focuses on:
 
-----------
+- Sales Performance
+- Profitability Analysis
+- Customer Behavior
+- Product Performance
+- Regional Performance
+- Seasonal Trends
+
+---
+
+## Project Objectives
+
+- Build an executive sales dashboard.
+- Monitor key business performance indicators.
+- Analyze customer purchasing behavior.
+- Compare sales performance across regions.
+- Evaluate product category profitability.
+- Track revenue and profit trends over time.
+- Calculate Average Order Value (AOV).
+- Measure year-over-year business growth.
+
+---
+
+## Business Problem
+
+Organizations collect vast amounts of sales data every day. However, without effective reporting and visualization, valuable business insights remain hidden.
+
+Decision-makers often struggle to answer questions such as:
+
+- Which regions generate the highest revenue?
+- Which products contribute the most profit?
+- Who are our highest-value customers?
+- How are sales changing over time?
+- What seasonal patterns exist?
+- Which categories should receive greater investment?
+
+This dashboard answers these questions through an interactive reporting solution built with Microsoft Power BI.
+
+---
 
 # Dashboard Preview
 
@@ -31,7 +67,37 @@ The solution focuses on sales performance, profitability, customer behavior, pro
 
 ![Customer Analytics](images/customer-analysis.png)
 
-----------
+---
+
+## Dashboard Features
+
+### Executive Dashboard
+
+- Revenue KPI
+- Total Profit KPI
+- Average Order Value (AOV)
+- Repeat Customers
+- Revenue by Region
+- Revenue by Product Category
+- Profit by Region
+- Profit by Category
+- Monthly Revenue Trend
+- Monthly Profit Trend
+- Product Performance
+- Top Customers
+
+### Customer Analytics
+
+- Customer Segmentation
+- Average Order Value by Region
+- Average Order Value by Category
+- Repeat Customer Analysis
+- Top 10 Customers
+- Cumulative Sales
+- Quarterly Sales Analysis
+
+---
+
 ## Dataset
 
 The dashboard is built using a sales transaction dataset containing information about customers, products, orders, profitability, and regions.
@@ -52,12 +118,12 @@ The dashboard is built using a sales transaction dataset containing information 
 | Total Sales | Revenue generated |
 | Profit | Profit earned |
 | Profit Margin (%) | Profit percentage |
-------
+
+---
+
 ## Data Model
 
 The project follows a clean Power BI data model to support efficient reporting and time intelligence.
-
-### Tables
 
 ### Sales Data
 
@@ -65,11 +131,9 @@ Fact table containing all sales transactions.
 
 ![Sales Table](images/sales-data-table.png)
 
----
-
 ### Ultimate Calendar
 
-Custom calendar table used for:
+Custom calendar table supporting:
 
 - Time Intelligence
 - Year-over-Year Analysis
@@ -79,73 +143,73 @@ Custom calendar table used for:
 
 ![Calendar Table](images/calendar-table.png)
 
----
-
 ### All Measures
 
 Dedicated table containing all DAX measures used throughout the dashboard.
 
 ![Measures Table](images/measures-table.png)
+
 ---
-## Business Problem
 
-Organizations collect vast amounts of sales data every day. However, without effective reporting and visualization, valuable business insights remain hidden.
+## Key DAX Measures
 
-Decision-makers often struggle to answer questions such as:
+| Measure | Description |
+|----------|-------------|
+| Total Sales | Total revenue generated |
+| Total Profit | Overall profit |
+| Average Order Value | Average revenue per order |
+| Repeat Customers | Customers with multiple purchases |
+| Cumulative Sales | Running total of sales |
+| Sales YoY | Year-over-Year Sales Growth |
+| Sales YoY % | Sales Growth Percentage |
+| Profit YoY | Year-over-Year Profit Growth |
+| Profit YoY % | Profit Growth Percentage |
 
-- Which regions generate the highest revenue?
-- Which products contribute the most profit?
-- Who are our highest-value customers?
-- How are sales changing over time?
-- What seasonal patterns exist?
-- Which categories should receive greater investment?
+> Complete DAX documentation is available in **docs/dax-measures.md**
 
-This dashboard answers these questions through an interactive reporting solution built with Microsoft Power BI.
+---
 
---------
+## Business Insights
 
-## Project Objectives
+The dashboard enables business stakeholders to:
 
-- Build an executive sales dashboard.
-- Monitor key business performance indicators.
+- Identify top-performing products.
+- Discover the most profitable regions.
 - Analyze customer purchasing behavior.
-- Compare sales performance across regions.
-- Evaluate product category profitability.
-- Track revenue and profit trends over time.
-- Calculate Average Order Value (AOV).
-- Measure year-over-year business growth.
-
------
-## Dashboard Features
-
-### Executive Dashboard
-
-- Revenue KPI
-- Total Profit KPI
-- Average Order Value (AOV)
-- Repeat Customers
-- Revenue by Region
-- Revenue by Product Category
-- Profit by Region
-- Profit by Category
-- Monthly Revenue Trend
-- Monthly Profit Trend
-- Product Performance
-- Top Customers
+- Track sales growth over time.
+- Monitor profitability trends.
+- Evaluate business performance using executive KPIs.
 
 ---
 
-### Customer Analytics
+## Technologies Used
 
-- Customer Segmentation
-- Average Order Value by Region
-- Average Order Value by Category
-- Repeat Customer Analysis
-- Top 10 Customers
-- Cumulative Sales
-- Quarterly Sales Analysis
+- Microsoft Power BI
+- DAX
+- Power Query
+- Microsoft Excel
+- Data Modeling
+- Git
+- GitHub
 
 ---
+
+## Skills Demonstrated
+
+- Business Intelligence
+- Dashboard Design
+- KPI Development
+- Power Query
+- DAX Programming
+- Data Modeling
+- Time Intelligence
+- Executive Reporting
+- Customer Analytics
+- Data Visualization
+- Analytical Storytelling
+
+---
+
 ## Repository Structure
 
 ```text
@@ -157,6 +221,7 @@ powerbi-sales-analytics-dashboard/
 ├── data/
 │
 ├── docs/
+│   └── dax-measures.md
 │
 ├── images/
 │
@@ -164,4 +229,50 @@ powerbi-sales-analytics-dashboard/
 │
 ├── LICENSE
 └── README.md
+```
+
+---
+
+## Getting Started
+
+1. Clone this repository.
+2. Open the `.pbix` file from the `reports` folder.
+3. Launch the project in Microsoft Power BI Desktop.
+4. Refresh the data if required.
+5. Explore the interactive dashboards.
+
+---
+
+## Future Enhancements
+
+- Implement Row-Level Security (RLS)
+- Publish to Power BI Service
+- Add drill-through pages
+- Add dynamic tooltips
+- Develop a mobile-optimized layout
+- Integrate real-time data refresh
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## Repository Topics
+
+```text
+power-bi
+business-intelligence
+dashboard
+analytics
+data-analysis
+dax
+power-query
+microsoft-power-bi
+sales-dashboard
+data-visualization
+kpi
+business-analytics
 ```
