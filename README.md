@@ -20,6 +20,20 @@ The dashboard enables executives, business managers, and analysts to monitor org
 The solution focuses on sales performance, profitability, customer behavior, product performance, and seasonal trends.
 
 ----------
+
+# Dashboard Preview
+
+## Executive Sales Dashboard
+
+![Sales Dashboard](images/dashboard-overview.png)
+
+---
+
+## Customer Analytics Dashboard
+
+![Customer Analytics](images/customer-analysis.png)
+
+----------
 ## Business Problem
 
 Organizations collect vast amounts of sales data every day. However, without effective reporting and visualization, valuable business insights remain hidden.
